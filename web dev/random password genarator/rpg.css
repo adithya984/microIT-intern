@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b3b98;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 0;
+}
+
+.container {
+    background-color: #23235b;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+h2 {
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.result-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-size: 18px;
+    padding: 12px 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.result-container #password-display {
+    word-wrap: break-word;
+    max-width: calc(100% - 40px);
+    overflow: hidden;
+}
+
+.result-container .btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.result-container #copy-btn {
+    background-color: #3b3b98;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.result-container #copy-btn:hover {
+    background-color: #4a4ac0;
+}
+
+.settings {
+    margin: 20px 0;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.setting input[type="range"] {
+    width: calc(100% - 150px);
+    height: 8px;
+    background: #5a5a9c;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-left: 10px;
+}
+
+.setting input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #a3a3d1;
+    cursor: pointer;
+}
+
+.setting input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #a3a3d1;
+    cursor: pointer;
+}
+
+.setting #length-value {
+    margin-left: 10px;
+    min-width: 20px;
+    text-align: right;
+}
+
+.generate-btn {
+    background-color: #3b3b98;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.generate-btn:hover {
+    background-color: #4a4ac0;
+}
